@@ -1,18 +1,21 @@
 package model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+import utils.UtilGeradorId;
 
 import java.util.Objects;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Getter
 @Setter
 public class Customer implements Comparable<Customer>{
 
-    private Integer id;
+    private Integer id = UtilGeradorId.gerarIdSequencial();
+
+    @NonNull //seta o parâmetro como requerido para o construtor (lombok)
     private String name;
+
+    @NonNull //seta o parâmetro como requerido para o construtor (lombok)
     private String cpf;
 
     @Override

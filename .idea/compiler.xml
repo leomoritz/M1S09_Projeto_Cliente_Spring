@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="modulo_2" />
+        <module name="modulo_1" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="module_1" target="17" />
+      <module name="module_2" target="17" />
+      <module name="module_3" target="17" />
+      <module name="modulo_1" target="17" />
+      <module name="modulo_2" target="17" />
+      <module name="modulo_3" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

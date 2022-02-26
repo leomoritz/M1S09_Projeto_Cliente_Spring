@@ -2,7 +2,6 @@ package repository;
 
 import model.Customer;
 
-import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 import java.util.TreeSet;
@@ -31,9 +30,11 @@ public class CustomerRepository implements CrudRepository<Customer> {
         if(findById(id).isEmpty()){
             return false;
         }
+
+        // Lógica para sobrescrever na lista o mesmo identificador com as novas informações atualizadas
+        delete(id);
         customer.setId(id);
-        findAll().remove(findById(id).get());
-        findAll().add(customer);
+        create(customer);
         return true;
     }
 

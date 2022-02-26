@@ -10,7 +10,7 @@ import java.util.Objects;
 @Setter
 public class Customer implements Comparable<Customer>{
 
-    private Integer id = UtilGeradorId.gerarIdSequencial();
+    private Integer id = UtilGeradorId.generateSequenceIdCustomer();
 
     @NonNull //seta o parâmetro como requerido para o construtor (lombok)
     private String name;

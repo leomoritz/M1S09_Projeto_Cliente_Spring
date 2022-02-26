@@ -11,7 +11,7 @@ public interface CrudService<T> {
     public boolean create(T t);
     //Read
     public Set<T> findAll();
-    public Optional<Customer> findById(Integer id);
+    public Optional<T> findById(Integer id);
     //Update
     public boolean update(Integer id, T t);
     //Delete
